@@ -1,0 +1,3 @@
+24b_type_errors.py:5: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
+24b_type_errors.py:6: error: Argument 1 to "double" has incompatible type "str"; expected "int"  [arg-type]
+Found 2 errors in 1 file (checked 1 source file)

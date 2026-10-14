@@ -1,0 +1,10 @@
+[transformers] `loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+transformers 5.19.0
+微型 GPT-2：2 层、4 头、隐藏维度 64，参数量 168,192
+logits 形状 (batch, 序列长度, 词表): (1, 4, 1000)
+随机模型的损失 6.889 ≈ ln(词表大小) = 6.908
+贪心生成的 token id: [11, 42, 7, 99, 99, 99, 99, 99, 99, 99, 591, 591]
+采样生成的 token id: [11, 42, 7, 99, 51, 623, 537, 139, 139, 556, 227, 260]
+Loading weights:   0%|          | 0/64 [00:00<?, ?it/s]Loading weights: 100%|██████████| 64/64 [00:00<00:00, 13239.73it/s]
+分词结果: ['H', 'ell', 'o', 'Ġw', 'orld', ',', 'Ġthis', 'Ġis']
+Hub 微型模型生成(随机权重，输出无意义): 'jjjirir'

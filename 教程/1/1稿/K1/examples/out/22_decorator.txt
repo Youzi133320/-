@@ -1,0 +1,6 @@
+[retry] 第 1 次失败: 网络抖动
+[retry] 第 2 次失败: 网络抖动
+[timer] flaky_api 用时 30.4 ms
+成功 | 函数名仍是: flaky_api | 文档: 模拟前两次失败的 API 调用
+fib(80) = 23416728348467685 | 缓存信息: CacheInfo(hits=78, misses=81, maxsize=None, currsize=81)
+[timer] hello 用时 0.0 ms

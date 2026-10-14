@@ -1,0 +1,7 @@
+2026-10-14 11:21:07.258 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+streamlit 1.65.0
+标题: 模型评测看板
+初始指标: [('样本数', '100'), ('及格率', '95%')]
+只选 B、及格线 70 后: [('样本数', '50'), ('及格率', '60%')]
+点击两次按钮后: 按钮被点击次数: `2`
+异常: 无

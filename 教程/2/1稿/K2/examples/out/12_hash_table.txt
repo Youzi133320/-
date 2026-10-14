@@ -1,0 +1,7 @@
+在 100000 个元素中查找: list 656 µs | set 64 ns
+get('plum') = 4 | 各桶长度: [2, 4, 0, 0] (字符串哈希每次进程启动都随机化，分布会变)
+hash(1) == hash(1.0) == hash(True): True → 字典里它们是同一个键: {1: 'c'}
+列表不能做键: cannot use 'list' as a dict key (unhashable type: 'list')
+词频 Top2: [('the', 3), ('and', 2)]
+按长度分组: {3: ['the', 'cat', 'and', 'the', 'hat', 'and', 'the', 'bat']}
+保序去重: ['the', 'cat', 'and', 'hat', 'bat']

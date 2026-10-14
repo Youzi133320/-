@@ -1,0 +1,9 @@
+Python 3.15.0
+str 不可变: 'str' object does not support item assignment
+元组里的列表被改了: (1, [2, 3, 4])
+因此这个元组不可哈希: unhashable type: 'list'
+bad : [1, 2] [1, 2]
+good: [1] [2]
+元组做键: 5.0
+frozendict: frozendict({'model': 'deepseek', 'temperature': 0.2}) | 可哈希: True
+frozendict 不可修改: 'frozendict' object does not support item assignment

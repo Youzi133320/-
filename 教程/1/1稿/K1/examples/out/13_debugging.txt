@@ -1,0 +1,6 @@
+复现成功: unsupported operand type(s) for +=: 'int' and 'str'
+  a: 90 -> int
+  b: '85' -> str
+  c: 70 -> int
+二分定位到第一条坏记录下标: 1
+修复并通过回归测试: 81.67

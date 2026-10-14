@@ -1,0 +1,9 @@
+[Timer] 用时 0.6 ms, 异常: None
+[Timer] 用时 0.0 ms, 异常: ValueError
+异常照常抛出，但 __exit__ 已执行
+块内 MODEL = test-model
+块外 MODEL = None
+文件已关闭: True
+同时打开 3 个文件
+全部已关闭: True
+suppress 忽略了 FileNotFoundError

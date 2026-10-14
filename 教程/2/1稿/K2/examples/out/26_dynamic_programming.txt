@@ -1,0 +1,13 @@
+fib(27): 朴素递归调用 635,621 次 26 ms | 记忆化 28 次 13 µs
+kitten → sitting 编辑距离: 3
+DP 表:
+        s  i  t  t  i  n  g
+     0  1  2  3  4  5  6  7
+  k  1  1  2  3  4  5  6  7
+  i  2  2  1  2  3  4  5  6
+  t  3  3  2  1  2  3  4  5
+  t  4  4  3  2  1  2  3  4
+  e  5  5  4  3  2  2  3  4
+  n  6  6  5  4  3  3  2  3
+显存 8GB 内最优组合: ['LoRA-A', 'Prefix']，总收益 100
+LCS('ABCBDAB', 'BDCABA') = BCBA

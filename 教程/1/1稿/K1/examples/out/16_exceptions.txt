@@ -1,0 +1,10 @@
+INFO read_port 检查完毕
+INFO read_port 检查完毕
+WARNING 配置错误: 缺少 port 配置
+INFO read_port 检查完毕
+WARNING 配置错误: port 不是整数: 'abc'
+INFO read_port 检查完毕
+WARNING 配置错误: port 越界: 70000
+端口 = 8080
+处理值错误: ['A 字段为空']
+处理类型错误: ['B 字段类型错']

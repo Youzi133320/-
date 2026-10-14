@@ -1,0 +1,4 @@
+plotly 7.1.0
+已导出交互式 HTML: plotly-demo.html 10 KB
+图中 trace 数: 4 | 类型: ['scatter']
+Figure 本质是 JSON: ['data', 'layout']

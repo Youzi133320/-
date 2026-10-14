@@ -1,0 +1,4 @@
+Circle 面积=3.14
+Rect 面积=6.00
+抽象类不能实例化: Can't instantiate abstract class Shape without an implementation for abstract method 'area'
+引擎启动 → 出发

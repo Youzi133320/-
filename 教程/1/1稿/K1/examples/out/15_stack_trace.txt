@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "15_stack_trace.py", line 9, in load_settings
+    cfg = parse_config(text)
+  File "15_stack_trace.py", line 5, in parse_config
+    return json.loads(text)
+           ~~~~~~~~~~^^^^^^
+  File "/home/box/.local/share/uv/python/cpython-3.15.0-linux-x86_64-gnu/lib/python3.15/json/__init__.py", line 371, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/box/.local/share/uv/python/cpython-3.15.0-linux-x86_64-gnu/lib/python3.15/json/decoder.py", line 358, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/box/.local/share/uv/python/cpython-3.15.0-linux-x86_64-gnu/lib/python3.15/json/decoder.py", line 374, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ~~~~~~~~~~~~~~^^^^^^^^
+json.decoder.JSONDecodeError: Illegal trailing comma before end of object: line 1 column 21 (char 20)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "15_stack_trace.py", line 18, in <module>
+    main()
+    ~~~~^^
+  File "15_stack_trace.py", line 15, in main
+    return load_settings('{"model": "deepseek",}')     # 多了一个逗号
+  File "15_stack_trace.py", line 11, in load_settings
+    raise RuntimeError("配置文件格式错误") from e   # 保留原始原因
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: 配置文件格式错误
+
+最内层帧: load_settings 第 11 行
+根因类型: JSONDecodeError

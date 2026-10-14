@@ -1,0 +1,5 @@
+包含 token: True | 包含 tok: False
+自动补全 'to': ['torch', 'token', 'tokenizer']
+自动补全 'tensor': ['tensor', 'tensorflow', 'tensorboard']
+共享前缀：6 个词共 46 个字符，Trie 只用了 26 个节点
+最长前缀匹配分词 unhappiness -> ['unhappi', 'ness']

@@ -1,0 +1,8 @@
+'{[()]}'         括号匹配: True
+'([)]'           括号匹配: False
+'{"a": [1, 2]}'  括号匹配: True
+'(('             括号匹配: False
+(3 + 4) * 2 的逆波兰 3 4 + 2 * = 14.0
+默认递归上限: 1000
+RecursionError: maximum recursion depth exceeded
+显式栈处理 100000 层: 100000

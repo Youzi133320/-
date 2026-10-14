@@ -1,0 +1,5 @@
+递归 DFS 访问顺序: ['A', 'B', 'D', 'F', 'C', 'E']
+显式栈 DFS 访问顺序: ['A', 'B', 'D', 'F', 'C', 'E']
+graph 有环: False | 加一条 F->A 后有环: True
+岛屿数量: 4
+abc 全排列: ['abc', 'acb', 'bac', 'bca', 'cab', 'cba']

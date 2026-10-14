@@ -1,0 +1,20 @@
+pandas 3.0.6
+{'model': <StringDtype(na_value=nan)>, 'task': <StringDtype(na_value=nan)>, 'score': dtype('float64'), 'cost': dtype('float64')}
+缺失值: 1
+       avg_score  runs  total_cost
+model                             
+C           91.0     1        0.30
+A           85.0     2        0.23
+B           71.5     2        0.09
+透视表:
+ task   chat  code
+model            
+A       NaN  85.0
+B      75.0  68.0
+C       NaN  91.0
+  model vendor  score
+0     A      甲   82.0
+1     B      乙   75.0
+2     C      丙   91.0
+原表 A 的 cost 未变: [0.12, 0.1, 0.11]
+用 .loc 修改原表后: [0.0, 0.0, 0.0]

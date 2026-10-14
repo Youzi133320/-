@@ -1,0 +1,18 @@
+> bp_demo.py(2)<module>()
+-> def accumulate(xs):
+(Pdb) Breakpoint 1 at bp_demo.py:5
+(Pdb) > bp_demo.py(5)accumulate()
+-> total += x * i
+(Pdb) (2, 7, 6)
+(Pdb)   /home/box/.local/share/uv/python/cpython-3.15.0-linux-x86_64-gnu/lib/python3.15/bdb.py(904)run()
+-> exec(cmd, globals, locals)
+  <string>(1)<module>()
+  bp_demo.py(7)<module>()
+-> print("结果:", accumulate([5, 6, 7, 8]))
+> bp_demo.py(5)accumulate()
+-> total += x * i
+(Pdb) 结果: 44
+The program finished and will be restarted
+> bp_demo.py(2)<module>()
+-> def accumulate(xs):
+(Pdb) 

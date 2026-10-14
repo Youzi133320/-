@@ -1,0 +1,22 @@
+doctest: 尝试 2 个示例，失败 0 个
+Help on function chunk in module __main__:
+
+chunk(items: list, size: int) -> list[list]
+    把列表按固定大小切块。
+
+    Args:
+        items: 待切分的列表。
+        size: 每块大小，必须为正整数。
+
+    Returns:
+        切分后的列表的列表；最后一块可能不足 size。
+
+    Raises:
+        ValueError: size <= 0 时。
+
+    Examples:
+        >>> chunk([1, 2, 3, 4, 5], 2)
+        [[1, 2], [3, 4], [5]]
+        >>> chunk([], 3)
+        []
+

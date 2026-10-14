@@ -1,0 +1,17 @@
+project
+  src
+    main.py
+    utils.py
+  tests
+    test_main.py
+  README.md
+高度: 3 | 叶子数: 4
+查找路径: project/tests/test_main.py
+BinOp(
+ left=BinOp(
+  left=Name(id='a'),
+  op=Add(),
+  right=Name(id='b')),
+ op=Mult(),
+ right=Constant(value=2))
+JSON 树深处取值: mlp

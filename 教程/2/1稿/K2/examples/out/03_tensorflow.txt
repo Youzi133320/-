@@ -1,0 +1,10 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791958160.729686  201000 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791958166.554170  201000 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+tensorflow 2.21.0 | keras 3.15.1 | 后端 tensorflow
+y = x²+2x 在 x=3 的导数: 8.0
+参数量: 1282
+第 1 轮 loss 0.4428 → 第 20 轮 loss 0.0376
+测试集准确率 0.960
+tf.function 结果: 24.0

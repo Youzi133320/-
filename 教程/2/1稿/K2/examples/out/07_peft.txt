@@ -1,0 +1,10 @@
+[transformers] `loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+peft 0.21.2
+trainable params: 16,384 || all params: 945,920 || trainable%: 1.7321
+LoRA A 形状 (8, 128) | B 形状 (384, 8) | B 全零: True
+step   1 loss 7.0146
+step  50 loss 4.9826
+step 100 loss 4.7472
+冻结的嵌入层未被修改: True
+保存的文件: ['README.md', 'adapter_config.json', 'adapter_model.safetensors'] 共 71 KB
+合并进基座后输出一致: True | 合并后类型: GPT2LMHeadModel

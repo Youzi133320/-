@@ -1,0 +1,11 @@
+pyarrow 25.0.1
+model: string
+score: int16
+tags: list<item: string>
+  child 0, item: string
+score 均值: 84.0
+过滤 score>80: ['A', 'A', 'C']
+Parquet 行数 4, 行组 1, 列 3
+只读一列: {'score': [82, 75, 88, 91]}
+pandas 列类型: {'model': <StringDtype(na_value=nan)>, 'score': dtype('int16'), 'tags': dtype('O')}
+polars 列类型: Schema({'model': String, 'score': Int16, 'tags': List(String)})

@@ -1,0 +1,40 @@
+polars 2.0.0
+shape: (3, 4)
+┌───────┬───────────┬──────┬────────────┐
+│ model ┆ avg_score ┆ runs ┆ total_cost │
+│ ---   ┆ ---       ┆ ---  ┆ ---        │
+│ str   ┆ f64       ┆ u32  ┆ f64        │
+╞═══════╪═══════════╪══════╪════════════╡
+│ C     ┆ 91.0      ┆ 1    ┆ 0.3        │
+│ A     ┆ 85.0      ┆ 2    ┆ 0.23       │
+│ B     ┆ 71.5      ┆ 2    ┆ 0.09       │
+└───────┴───────────┴──────┴────────────┘
+优化后的查询计划:
+ SORT BY [descending: [true]] [col("score_per_cost")]
+  simple π 2/2 ["model", "score_per_cost"]
+     WITH_COLUMNS:
+     [(col("score").cast(Float64) / col("cost")).alias("score_per_cost")] 
+      simple π 3/3 ["model", "score", "cost"]
+        FILTER col("task") == "code"
+        FROM
+          simple π 4/4 ["model", "score", "cost", ... 1 other column]
+            DF ["model", "task", "score", "cost"]; PROJECT */4 COLUMNS
+shape: (4, 2)
+┌───────┬────────────────┐
+│ model ┆ score_per_cost │
+│ ---   ┆ ---            │
+│ str   ┆ f64            │
+╞═══════╪════════════════╡
+│ B     ┆ 1700.0         │
+│ A     ┆ 800.0          │
+│ A     ┆ 683.333333     │
+│ C     ┆ 303.333333     │
+└───────┴────────────────┘
+shape: (1, 1)
+┌──────┐
+│ cost │
+│ ---  │
+│ f64  │
+╞══════╡
+│ 0.33 │
+└──────┘

@@ -1,0 +1,14 @@
+INFO    app.llm: 调用模型
+WARNING app.llm: 接近速率限制: 剩余 3 次
+ERROR   app.llm: 计算失败
+Traceback (most recent call last):
+  File "/workspace/tutorials/K1/examples/17_logging.py", line 28, in <module>
+    1 / 0
+    ~~^~~
+ZeroDivisionError: division by zero
+---- JSON 日志（可被 ELK/Loki 等系统检索）----
+{"level": "DEBUG", "logger": "app.llm", "msg": "请求体大小=1234 tokens"}
+{"level": "INFO", "logger": "app.llm", "msg": "调用模型", "request_id": "req-7"}
+{"level": "WARNING", "logger": "app.llm", "msg": "接近速率限制: 剩余 3 次"}
+{"level": "ERROR", "logger": "app.llm", "msg": "计算失败", "request_id": "req-8", "exc": "ZeroDivisionError: division by zero"}
+INFO    app.llm: 使用 key=sk-ab***

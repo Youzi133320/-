@@ -1,0 +1,5 @@
+'hello world'
+不纯: 1 2
+纯: 1 1
+User(name='ann', level=1) User(name='ann', level=2)
+[1, 4, 9]
